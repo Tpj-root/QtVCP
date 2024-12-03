@@ -1,0 +1,75 @@
+
+https://gist.github.com/KurtJacobson/df409ad48ad88ec227620ccd292403cc
+
+
+
+
+How to fix this errors
+
+ not found in /usr/lib/python3/dist-packages/qtvcp/plugins/
+
+cannot continue designer installation
+
+
+Solu:
+
+
+
+
+'~/LINUXCNC_PROJECT_NAME/lib/python/qtvcp/plugins/qtvcp_plugin.py'
+
+
+
+/home/sab/Desktop/TRY_BUILD/linuxcnc-dev/lib/python/qtvcp
+
+
+move to this location
+
+
+/usr/lib/python3/dist-packages/
+
+
+
+
+copy and [aste this files in the that location
+then run the script
+
+
+lib/python/qtvcp/designer/install_script
+
+/home/sab/Desktop/TRY_BUILD/linuxcnc-dev/lib/python/qtvcp/designer
+
+
+
+
+
+after run the 
+
+./install_script 
+
+
+
+
+Do you wish to install Qt Designer for creating or modifying a GUI
+ 1 = No, exit
+ 2 = Yes, for a Run In Place installation
+ 3 = Yes, for a package installation
+
+Selection? 
+
+
+
+put the value : 3
+
+
+
+# Get the output
+
+create plugin link at:
+~/.designer/plugins/python/
+
+
+Installation complete, designer can be started with:
+
+designer -qt=5
+
